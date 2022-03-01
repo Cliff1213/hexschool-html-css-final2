@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <meta name="description" content="六角學院 html,css 最終作業">
+
+    <meta property="og:title" content="FB的標題">
+    <meta property="og:description" content="FB的描述">
+    <meta property="og:type" content="website">
+    <meta property="og:image" content="FB的圖片">
+    
+    <link rel="shortcut icon" href="images/favicon/hexfavi_32px.png" type="image/x-icon">
+
+    <title>Hexschool html - 首頁</title>
+    <link rel="stylesheet" href="css/reset.css">
+    <link rel="stylesheet" href="css/all.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+</head>
+
+<body>
+    <div class="container mx-auto">
+        <nav class="navbar d-flex j-c-space-between a-i-center">
+            <a href="index.html" class="logo"><img src="images/logo_index.png" alt="logo_hexoschool"></a>
+            <ul class="d-flex">
+                <li><a href="index.html">首頁</a></li>
+                <li><a href="course.html">課程</a></li>
+                <li><a href="faq.html">問答</a></li>
+            </ul>
+        </nav>
+
+        <header class="header-index mb-section">
+            <div class="banner-index fw-bold">
+                <h1 class="fs-xl text-green">歡迎來到<span class="text-white">六角學院</span><br>帶你一起攻略前端設計</h1>
+                <a href="#" class="btn-green fs-md">馬上去註冊<i class="fa-solid fa-arrow-right"></i></a>
+            </div>
+        </header>
+
+        <div class="course mb-section">
+            <div class="course-title d-flex a-i-flex-end j-c-space-between">
+                <div class="course-text d-flex a-i-flex-end">
+                    <h2 class="fs-lg fw-bold text-green">精選課程</h2>
+                    <p class="fs-md text-gray">幫助你拿到前端工程師的門票</p>
+                </div>
+                <a href="#" class="course-btn text-green">更多課程</a>
+            </div>
+            <ul class="course-items d-flex j-c-space-between text-center">
+                <li>
+                    <img src="images/html_index.png" alt="img_html">
+                    <h3 class="fs-md">Html 5 基礎教學</h3>
+                    <p class="text-left text-gray">主流前端網站設計的基礎，透過實際的範例，瞭解正確的網站開發流程。</p>
+                </li>
+                <li>
+                    <img src="images/rwd_index.png" alt="img_rwd">
+                    <h3 class="fs-md">響應式網站設計</h3>
+                    <p class="text-left text-gray">六角學院提供業界響應式開發方法，讓學生瞭解完善的行動版開發觀念。</p>
+                </li>
+                <li>
+                    <img src="images/jQuery_index.png" alt="img_jQuery">
+                    <h3 class="fs-md">jQuery 實戰教學</h3>
+                    <p class="text-left text-gray">分為四大主題：變數的使用、操作DOM、基本數學運算和套件運用。</p>
+                </li>
+            </ul>
+        </div>
+
+        <div class="compare mb-section">
+            <div class="compare-title d-flex a-i-flex-end">
+                <h2 class="fs-lg fw-bold text-green">課程比較</h2>
+                <p class="fs-md text-gray">線上課程與實體課程差異</p>
+            </div>
+
+            <table class="w-100 text-center">
+                <tr class="bg-gray">
+                    <th>項目</th>
+                    <th>六角學院 線上課程</th>
+                    <th>一般線上課程</th>
+                    <th>一般實體課程</th>
+                </tr>
+                <tr>
+                    <td>費用</td>
+                    <td class="text-green">較低</td>
+                    <td class="text-green">較低</td>
+                    <td>較高</td>
+                </tr>
+                <tr>
+                    <td>學習效果</td>
+                    <td>一般</td>
+                    <td>較低</td>
+                    <td class="text-green">很好</td>
+                </tr>
+                <tr>
+                    <td>Code review</td>
+                    <td class="text-green">有</td>
+                    <td>無</td>
+                    <td>不一定</td>
+                </tr>
+                <tr>
+                    <td>課程更新速度</td>
+                    <td class="text-green">普通</td>
+                    <td class="text-green">普通</td>
+                    <td>較慢</td>
+                </tr>
+                <tr>
+                    <td>多次複習</td>
+                    <td class="text-green">可</td>
+                    <td>可</td>
+                    <td>不可</td>
+                </tr>
+                <tr>
+                    <td>字幕</td>
+                    <td class="text-green">有</td>
+                    <td>不一定</td>
+                    <td>板書</td>
+                </tr>
+            </table>
+        </div>
+
+        <div class="contact d-flex j-c-space-between bg-gray">
+            <p class="contact-text fw-bold">你就是六角的下一個學生！<br>快留下資料讓我們認識你吧</p>
+            <form action="#">
+                <ul class="d-flex flex-column">
+                    <li><input class="w-100" type="text" id="name" name="name" placeholder="你的名字是？"></li>
+                    <li><input class="w-100" type="email" id="email" name="email" placeholder="example@mail.com.tw"></li>
+                    <li class="contact-btn a-self-end"><input type="submit" value="送出"></li>
+                </ul>
+            </form>
+        </div>
+
+        <footer class="footer d-flex j-c-space-between a-i-center">
+            <div class="footer-logo text-right">
+                <a href="index.html"><img src="images/logo_index.png" alt="logo_hexschool"></a>
+                <p>© 2018 hexschool</p>
+            </div>
+
+            <ul class="footer-icons d-flex">
+                <li><a href="#"><img src="images/facebook_index.png" alt="icon_facebook"></a></li>
+                <li><a href="#"><img src="images/twitter_index.png" alt="icon_twitter"></a></li>
+                <li><a href="#"><img src="images/instagram_index.png" alt="icon_instagram"></a></li>
+            </ul>
+        </footer>
+
+        <a class="back-to-top" href="#">
+            <i class="fs-md fa-solid fa-arrow-up"></i>
+        </a>
+
+    </div>
+</body>
+
+</html>

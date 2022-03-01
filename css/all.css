@@ -1,0 +1,440 @@
+/* global */
+*,*::before,*::after {
+    box-sizing: border-box;
+    text-decoration: none;
+    list-style: none;
+}
+body {
+    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "Microsoft JhengHei", Roboto, "Helvetica Neue", Arial, sans-serif;
+}
+
+.container {
+    width: 1024px;
+}
+
+.mx-auto {
+    margin: 0 auto;
+}
+.d-flex {
+    display: flex;
+}
+.flex-column {
+    flex-direction: column;
+}
+.j-c-center {
+    justify-content: center;
+}
+.j-c-space-between {
+    justify-content: space-between;
+}
+.a-i-center {
+    align-items: center;
+}
+.a-i-flex-end {
+    align-items: flex-end;
+}
+.text-center {
+    text-align: center;
+}
+.text-left {
+    text-align: left;
+}
+.text-right {
+    text-align: right;
+}
+.text-green {
+    color: #00cc99;
+}
+.text-gray {
+    color: #8a8a8a;
+}
+.text-white {
+    color: #fff;
+}
+.fs-xl {
+    font-size: 48px;
+}
+.fs-lg {
+    font-size: 36px;
+}
+.fs-md {
+    font-size: 20px;
+}
+.fw-bold {
+    font-weight: bold;
+}
+.mb-section {
+    margin-bottom: 60px;
+}
+.bg-gray {
+    background:#ebebeb;
+}
+.w-100 {
+    width: 100%;
+}
+
+.btn-green {  /* 每個頁面按鈕樣式、距離皆相同 */
+    display: inline-block;
+    background: #00cc99;
+    color: #fff;
+    padding: 15px 36px;
+    border-radius: 5px;
+}
+.btn-green:hover {
+    background-color: #039b75;
+}
+.link-mail {  /* mailto 相同樣式 */
+    color: #00cc99;
+}
+.link-mail:hover {
+    color: #039b75;
+    border-bottom: 1px solid #039b75;
+}
+.back-to-top {  /* 回到頂部 */
+    background: #aff7e5;
+    color: #039b75;
+    padding: 18px 21px;
+    border-radius: 50%;
+    position: fixed;
+    right: 40px;
+    bottom: 20px;
+}
+.back-to-top:hover {
+    background: #7effdf;
+}
+
+
+/* navbar - layout */
+.navbar {
+    background: rgba(255, 255, 255, 0.1);
+    padding: 18px 40px;
+    position: absolute;
+    width: 1024px;
+}
+.navbar li {
+    margin-left: 15px;
+}
+.navbar li a {
+    font-size: 15px;
+    line-height: 1.2;
+    padding: 28px 15px 20px 15px;
+    color: #fff;
+}
+.navbar li a:hover {
+    border-bottom: 7px solid #00cc99;
+    background: -webkit-linear-gradient(bottom, rgba(196, 235, 226, .3), rgba(0, 0, 0, .1));
+    color: #00cc99;
+}
+
+/* footer - layout*/
+.footer {
+    background-color: #323228;
+    padding: 30px 40px;
+}
+.footer-logo img {
+    margin-bottom: 5px;
+}
+.footer-logo p {
+    color: #868684;
+}
+.footer-icons li {
+    margin-left: 20px;
+}
+.footer-icons img:hover {
+    transform: scale(1.2)rotate(15deg);
+    transition: .6s;
+}
+
+
+/* Page-index */
+/* header */
+.banner-index {
+    background: url('https://raw.githubusercontent.com/Cliff1213/hexschool-html-css-final2/master/images/banner_index.png') #000 no-repeat;
+    padding: 184px 40px 138px 40px;
+}
+.banner-index h1 {
+    line-height: 1.5;
+    margin-bottom: 40px;
+}
+.banner-index i {
+    margin-left: 20px;
+}
+
+/* course */
+.course {
+    padding: 0 40px;
+}
+.course-title {
+    margin-bottom: 30px;
+}
+.course-title h2 {
+    margin-right: 15px;
+}
+.course-btn {
+    padding: 5px 15px;
+    border: 2px solid #00cc99;
+    border-radius: 4px;
+}
+.course-btn:hover {
+    background: #00cc99;
+    color: #fff;
+}
+.course-items {
+    line-height: 1.4;
+}
+.course-items li {
+    width: 300px;
+    padding: 25px 20px;
+    box-shadow: 1px 2px 6px #ccc;
+}
+.course-items img, .course-items h3 {
+    margin-bottom: 10px;
+}
+
+/* compare */
+.compare {
+    padding: 0 40px;
+}
+.compare-title {
+    margin-bottom: 30px;
+}
+.compare-title h2 {
+    margin-right: 15px;
+}
+.compare table tr {
+    border-top: 1px solid #ebebeb;
+    border-bottom: 1px solid #ebebeb;
+}
+.compare table th, .compare table td {
+    padding: 15px 0;
+}
+
+/* contact */
+.contact {
+    padding: 140px 40px 45px 40px;
+}
+.contact-text {
+    font-size: 30px;
+    line-height: 2;
+    color: rgba(0, 0, 0, .8);
+}
+.contact form {
+    width: 460px;
+}
+.contact form li {
+    margin-bottom: 20px;
+}
+.contact form input {
+    padding: 15px 20px;
+    border: 0px solid #fff;
+    border-radius: 4px;
+    font-size: 20px;
+}
+.contact form input:focus {
+    outline: none;
+    background-color: #e9fffa;
+}
+.contact-btn {
+    align-self: flex-end;
+}
+.contact-btn input {
+    padding: 15px 25px 15px 40px !important;
+    background: #00cc99;
+    color: #fff;
+    font-weight: bold;
+    letter-spacing: 1em;
+}
+.contact-btn input:hover {
+    background: #039b75;
+    cursor: pointer;
+}
+
+
+
+/* Page-course */
+/* header */
+.banner-course {
+    background: url('https://raw.githubusercontent.com/Cliff1213/hexschool-html-css-final2/master/images/banner_course.png') #000 no-repeat;
+    padding: 184px 40px 180px 40px;
+}
+.banner-course h1 {
+    margin-bottom: 15px; /* ?設定行高反而會影響到 padding */
+}
+.banner-course p {
+    font-size: 24px;
+    margin-bottom: 56px;
+}
+.banner-course i {
+    margin-left: 20px;
+}
+
+/* lecturer */
+.lecturer {
+    padding: 0 200px;
+}
+.lecturer h2 {
+    line-height: 1.5;
+}
+.lecturer ul {
+    margin-top: 25px;
+}
+.lecturer li {
+    list-style: disc;
+    line-height: 1.5;
+    padding-left: 24px;
+}
+.lecturer li::marker {
+    font-size: 1px;
+}
+
+/* advantage */
+.advantage {
+    padding: 0 200px;
+}
+.advantage-title {
+    margin-bottom: 30px;
+}
+.advantage-title h2 {
+    margin-right: 15px;
+}
+.advantage li {
+    list-style: decimal;
+    padding-left: 15px;
+    margin-left: 20px;
+    line-height: 1.5;
+}
+
+/* outline */
+.outline {
+    padding: 0 200px;
+}
+.outline-title {
+    margin-bottom: 30px;
+}
+.outline-title h2 {
+    margin-right: 15px;
+}
+.outline li {
+    padding: 18px 36px;
+}
+
+/* register */
+.register {
+    padding: 140px 200px;
+}
+.register-text {
+    line-height: 2;
+    font-size: 30px;
+    color: rgba(0, 0, 0, .8);
+}
+.register a {
+    margin-bottom: 8px;
+}
+.register i {
+    margin-left: 20px;
+}
+
+
+
+/* Page-faq */
+/* header */
+.banner-faq {
+    background: url('https://raw.githubusercontent.com/Cliff1213/hexschool-html-css-final2/master/images/banner_faq.png') #000 no-repeat;
+    padding: 180px 200px 188px 200px;
+}
+.banner-faq h1 {
+    margin-bottom: 15px;
+}
+.banner-faq p {
+    font-size: 24px;
+    margin-bottom: 50px;
+}
+.banner-faq form input:focus {
+    outline: none;
+}
+.banner-faq-search input {
+    padding: 15px;
+    border: 0px solid #fff;
+}
+.banner-faq-search {
+    background: #fff;
+    border-radius: 4px;
+    overflow: hidden;
+}
+.banner-faq-search i {
+    font-size: 24px;
+    padding: 15px;
+    color: #000;
+}
+.banner-faq-search i:hover {
+    color: #00cc99;
+}
+
+/* common */
+.common {
+    padding: 0 120px;
+}
+.common-title {
+    margin-bottom: 30px;
+}
+.common-title h2 {
+    margin-right: 15px;
+}
+.common li {
+    line-height: 1.7;
+    margin-bottom: 30px;
+}
+
+/* payment */
+.payment {
+    padding: 0 120px;
+}
+.payment-title {
+    margin-bottom: 30px;
+}
+.payment-title h2 {
+    margin-right: 15px;
+}
+.payment li {
+    line-height: 1.7;
+    margin-bottom: 30px;
+}
+.payment .installment li {
+    margin-bottom: 0;
+    list-style: decimal;
+    margin-left: 45px;
+    padding-left: 20px;
+}
+
+/* refund */
+.refund {
+    padding: 0 120px;
+}
+.refund-title {
+    margin-bottom: 30px;
+}
+.refund-title h2 {
+    margin-right: 15px;
+}
+.refund li {
+    line-height: 1.7;
+    margin-bottom: 30px;
+}
+.refund .other-way li {
+    margin-bottom: 0;
+    list-style: disc;
+    margin-left: 50px;
+    padding-left: 20px;
+}
+.refund .other-way li::marker {
+    font-size: 1px;
+}
+.refund .attention li {
+    margin-bottom: 0;
+    list-style: disc;
+    list-style-position: inside;
+    text-indent: 35px;
+}
+.refund .attention li::marker {
+    font-size: 1px;
+}

@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <meta name="description" content="六角學院 html,css 最終作業">
+
+    <meta property="og:title" content="FB的標題">
+    <meta property="og:description" content="FB的描述">
+    <meta property="og:type" content="website">
+    <meta property="og:image" content="FB的圖片">
+    
+    <link rel="shortcut icon" href="images/favicon/hexfavi_32px.png" type="image/x-icon">
+
+    <title>Hexschool html - 問答</title>
+    <link rel="stylesheet" href="css/reset.css">
+    <link rel="stylesheet" href="css/all.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+</head>
+
+<body>
+    <div class="container mx-auto">
+        <nav class="navbar d-flex j-c-space-between a-i-center">
+            <a href="index.html" class="logo"><img src="images/logo_index.png" alt="logo_hexoschool"></a>
+            <ul class="d-flex">
+                <li><a href="index.html">首頁</a></li>
+                <li><a href="course.html">課程</a></li>
+                <li><a href="faq.html">問答</a></li>
+            </ul>
+        </nav>
+
+        <header class="header-faq mb-section">
+            <div class="banner-faq text-center fw-bold">
+                <h1 class="fs-xl text-white">遇到問題了嗎？</h1>
+                <p class="text-green">別擔心，你想找的答案都在這裡！</p>
+                <form>
+                    <div class="banner-faq-search d-flex a-i-center">
+                        <input class="fs-md w-100" type="text" placeholder="請輸入問題關鍵字">
+                        <!-- 下方搜尋圖示要使用 input 的 submit 類型嗎？ -->
+                        <a href="#"><i class="fa-solid fa-magnifying-glass"></i></a>
+                    </div>
+                </form>
+            </div>
+        </header>
+
+        <div class="common mb-section">
+            <div class="common-title d-flex a-i-flex-end">
+                <h2 class="fs-lg text-green fw-bold">常見問題＃</h2>
+                <p class="fs-md text-gray">你想問的說不定也在這裡</p>
+            </div>
+            <ul>
+                <li>
+                    <p class="fs-md">Q：為什麼你們要用 Udemy 放你們的影音課程，他有什麼好處嗎？</p>
+                    <p class="text-gray">A：他除了可上傳影音課程外，同時也能上傳我們設計出來的範例程式碼、設計單選題目，並能在 IOS、Andorid 上面學習，同時也能追蹤每位學生的學習機制，讓我們放心挑選 Udemy 作為我們的教學平台。</p>
+                </li>
+                <li>
+                    <p class="fs-md">Q：影片課程有時效性嗎？</p>
+                    <p class="text-gray">A：完全沒有，此課程提供終身複習服務，你隨時可聽到我們即時更新的影音課程內容。</p>
+                </li>
+                <li>
+                    <p class="fs-md">Q：我很擔心學完後還是學不會網頁設計，有什麼辦法嗎？</p>
+                    <p class="text-gray">A：課程結束後我們會提供給你網頁設計稿，做完後 mail 給我們，service@hexschool.com，我們會替你進行程式碼檢視，以確保你的觀念吸收正確。</p>
+                </li>
+            </ul>
+        </div>
+
+        <div class="payment mb-section">
+            <div class="payment-title d-flex a-i-flex-end">
+                <h2 class="fs-lg text-green fw-bold">怎麼付款＃</h2>
+                <p class="fs-md text-gray">付款方式保證最多元</p>
+            </div>
+            <ul>
+                <li>
+                    <p class="fs-md">Q：請問可以分期付款嗎？</p>
+                    <p class="text-gray">A：當然沒問題，在本平台購買我們最高提供 6 期分期。</p>
+                    <!-- 下方 ul 是否建議與上方 p 段落群組？ -->
+                    <ul class="installment text-gray">
+                        <li>選擇產品後</li>
+                        <li>在進入金流平台付款時可選擇信用卡分期付款</li>
+                        <li>選擇期數，旁邊會附註每期應付款項</li>
+                    </ul>
+                </li>
+                <li>
+                    <p class="fs-md">Q：我沒有信用卡，有沒有其他匯款方案？</p>
+                    <p class="text-gray">A：每個課程現在都提供了其它付款方式，在課程連結旁就可以找到這個其他付款方式，而且我們是採用台灣第三方支付，安全又可靠。</p>
+                </li>
+                <li>
+                    <p class="fs-md">Q：採用其它付款流程，但還沒有收到課程怎麼辦？</p>
+                    <p class="text-gray">A：課程會在 48 小時內寄出，如果沒有收到可以透過右下角的客服，或直接 mail 至我們的信箱 <a href="mailto:service@hexschool.com" class="link-mail">service@hexschool.com</a> ，我們會盡快處理以保障您的權益。</p>
+                </li>
+            </ul>
+        </div>
+
+        <div class="refund mb-section">
+            <div class="refund-title d-flex a-i-flex-end">
+                <h2 class="fs-lg text-green fw-bold">我想退款＃</h2>
+                <p class="fs-md text-gray">期待你再次成為我們的學生</p>
+            </div>
+            <ul>
+                <li>
+                    <p class="fs-md">Q：如果怕線上影音課程吸收不好，可以要求退費嗎？</p>
+                    <p class="text-gray">A：沒問題！Udemy 在 30 天內都可申請退款！</p>
+                </li>
+                <li>
+                    <p class="fs-md">Q：Udemy 如何退款？</p>
+                    <p class="text-gray">A：透過 Udemy 的課程頁面的 選項 下即可使用退款功能。</p>
+                </li>
+                <li>
+                    <p class="fs-md">Q：其它支付流程如何退款？</p>
+                    <p class="text-gray">A：請發信到 <a href="mailto:service@hexschool.com" class="link-mail">service@hexschool.com</a> 並詳著以下內容：</p>
+                    <ul class="other-way text-gray">
+                        <li>退款帳戶</li>
+                        <li>Udemy 用戶名稱</li>
+                        <li>購買時間</li>
+                        <li>退款原因</li>
+                    </ul>
+                </li>
+                <li>
+                    <p>接下來，我們會有專人協助退款。退款後請注意：</p>
+                    <ul class="attention text-gray">
+                        <li>退款會酌收第三方支付手續費，信用卡一次付清 2.8%、分三期 3%、分六期 3.5%、分 12 期 7%、ATM為 1%，超商為 28 元。</li>
+                        <li>退款後亦不能參與任何線上討論以及每週的線上問答</li>
+                        <li>退款後的學員再下次購買時，我們會先提供測試帳號 7 天再次鑑賞，確認該學員有需上這門課程，才能購買該次課程。</li>
+                    </ul>
+                </li>
+            </ul>
+        </div>
+
+        <footer class="footer d-flex j-c-space-between a-i-center">
+            <div class="footer-logo text-right">
+                <a href="index.html"><img src="images/logo_index.png" alt="logo_hexschool"></a>
+                <p>© 2018 hexschool</p>
+            </div>
+
+            <ul class="footer-icons d-flex">
+                <li><a href="#"><img src="images/facebook_index.png" alt="icon_facebook"></a></li>
+                <li><a href="#"><img src="images/twitter_index.png" alt="icon_twitter"></a></li>
+                <li><a href="#"><img src="images/instagram_index.png" alt="icon_instagram"></a></li>
+            </ul>
+        </footer>
+
+        <a class="back-to-top" href="#">
+            <i class="fs-md fa-solid fa-arrow-up"></i>
+        </a>
+
+    </div>
+</body>
+
+</html>
